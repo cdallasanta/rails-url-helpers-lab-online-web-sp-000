@@ -1,10 +1,4 @@
 class Student < ActiveRecord::Base
-  after_initialize :init
-
-  def init
-    self.status = false if self.status.nil?
-  end
-
   def to_s
     self.first_name + " " + self.last_name
   end
