@@ -2,7 +2,7 @@ class Student < ActiveRecord::Base
   after_initialize :init
 
   def init
-    self.status ||= false
+    self.status = false if self.bool_field.nil?
   end
 
   def to_s
