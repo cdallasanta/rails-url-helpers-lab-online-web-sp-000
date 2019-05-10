@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
   def activate
     binding.pry
     @student = set_student
-    @student.status != @student.status
+    @student.status = !@student.status
     redirect_to @student
   end
 
