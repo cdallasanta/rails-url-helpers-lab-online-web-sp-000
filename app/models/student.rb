@@ -4,8 +4,8 @@ class Student < ActiveRecord::Base
   end
 
   #
-  # def active
-  #   if self.status
+  # def status
+  #   if self.active
   #     "Active"
   #   else
   #     "Inactive"
