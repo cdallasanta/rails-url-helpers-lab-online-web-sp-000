@@ -3,12 +3,12 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  #
-  # def status
-  #   if self.active
-  #     "Active"
-  #   else
-  #     "Inactive"
-  #   end
-  # end
+
+  def status
+    if self.active
+      "active"
+    else
+      "inactive"
+    end
+  end
 end
