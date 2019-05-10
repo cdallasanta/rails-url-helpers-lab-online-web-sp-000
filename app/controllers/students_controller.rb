@@ -11,7 +11,8 @@ class StudentsController < ApplicationController
   def activate
     @student = set_student
     @student.status != @student.status
-    
+    redirect_to @student
+  end
 
   private
 
